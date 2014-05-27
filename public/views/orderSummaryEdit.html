@@ -1,0 +1,31 @@
+HERE YOU CAN EDIT YOUR ORDER........
+
+<br></br>
+IF YOU SEE MICK WE'RE STILL A WORK IN PROGRESS!
+
+<div class="header">
+    <h3 class="text-muted">KACKIE ANGULAR PROJECT</h3>
+  <nav class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  
+  </div>
+<br></br>
+
+<img src="images/youngmick.jpg" alt="I'm The Grim Reaper">
+
+<br>GIVE ME SOME SPACE</br>
+
+
+<button data-ng-click="createPost()">Add Item To Cart</button>
+<section data-ng-repeat="post in posts">
+	<h2>{{post.title}}</h2>
+	<p>{{post.content}}</p>
+	<a href="#/blog/{{post._id}}">view more</a>
+</section>
+
+<div class="footer">
+  <p><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</p>
+</div>

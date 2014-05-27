@@ -29,7 +29,29 @@ angular
         templateUrl: 'views/blog-editDetail.html',
         controller: 'PostCtrl'
       })
+      .when('/products', {
+        templateUrl: 'views/products.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/productsDetail', {
+        templateUrl: 'views/productsDetail.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/orderCreate', {
+        templateUrl: 'views/orderCreate.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/summaryOrder', {
+        templateUrl: 'views/orderSummary.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/orderSummaryEdit', {
+        templateUrl: 'views/orderSummaryEdit.html',
+        controller: 'PostsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
+
+
   });

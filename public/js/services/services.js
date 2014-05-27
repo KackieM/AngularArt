@@ -9,7 +9,7 @@ angular.module('ngDay2App')
 			};
 	})
 	.factory('PostSvc', function($resource) {
-		return $resource('api/collections/protected-garden-1973/:id'),
+		return $resource('api/collections/kackie5/:id'),
 			{
 				id: '@_id'
 			},
