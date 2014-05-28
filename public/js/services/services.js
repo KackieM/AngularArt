@@ -6,7 +6,7 @@ angular.module('ngArt')
 			{
 				query: { method: 'GET', isArray: true },
 				create: { method: 'POST'}
-			});
+			};
 	})
 	.factory('PostSvc', function($resource) {
 		return $resource('api/collections/kat5/:id'),
@@ -17,8 +17,22 @@ angular.module('ngArt')
 				show: { method: 'GET'},
 				edit: { method: 'PUT'},
 				delete: { method: 'DELETE'}
-			});
-	})
+			)
+	});
+angular.module('ngArt')
+	.factory('ArtSvc', function($resource){
+		return $resource('api/collections/ngArt', {},
+			)
+
+
+
+
+	}
+
+
+
+
+		)
 
 
 

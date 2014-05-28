@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngDay2App')
+angular.module('ngArt')
   .controller('PostsCtrl', function ($scope, $location, PostsSvc) {
 
     $scope.createPost = function() {
@@ -24,7 +24,7 @@ angular.module('ngDay2App')
   		$location.path('/blog');
   	};
 
-    .controller('ArtController', function($scope) {
+    .controller('ArtCtrl', function($scope) {
   $scope.product = [
 
     {
