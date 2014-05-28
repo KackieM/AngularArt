@@ -1,15 +1,15 @@
 'use strict';
-angular.module('ngDay2App')
+angular.module('ngArt')
 	.factory('PostsSvc', function($resource) {
-		return $resource('api/collections/kackie5/'),
+		return $resource('api/collections/kat5'),
 			{},
 			{
 				query: { method: 'GET', isArray: true },
 				create: { method: 'POST'}
-			};
+			});
 	})
 	.factory('PostSvc', function($resource) {
-		return $resource('api/collections/kackie5/:id'),
+		return $resource('api/collections/kat5/:id'),
 			{
 				id: '@_id'
 			},
