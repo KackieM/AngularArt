@@ -1,28 +1,28 @@
 <!doctype html>
 <div class="header">
 
-    <h1>WORKING ON APP HERE FOR INTEGRATION WITH HEROKU</h1>
+    <h1>{{WORKING ON APP HERE FOR INTEGRATION WITH HEROKU}}</h1>
   <ul class="nav nav-pills pull-right">
-    <li class=""><a ng-href="#">Home</a></li>
-    <li><a ng-href="#/about">About</a></li>
-    <li><a ng-href="#/contact">Contact</a></li>
+    <li class=""><a ng-href="#">{{Home}}</a></li>
+    <li><a ng-href="#/about">{{About}}</a></li>
+    <li><a ng-href="#/contact">{{Contact}}</a></li>
   </ul>
-  <h3 class="text-muted">Kackie Angular Project DAY THREE</h3>
+  <h3 class="text-muted">{{Kackie Angular Project DAY THREE}}</h3>
 </div>
 
 <div class="jumbotron">
-  <h1>Art of The Matter</h1>
+  <h1>{{Art of The Matter}}</h1>
   <p class="lead">
-    <img src="images/grimreapermodel.jpg" alt="I'm The Grim Reaper"><br>
-    Shopping for Your Life
+    <img ng-src={{"images/grimreapermodel.jpg"}}><br>
+    {{Shopping for Your Life}}
   </p>
-  <p><a class="btn btn-default btn-lg active" ng-href="#/order-create">On To Shop<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+  <p><a class="btn btn-default btn-lg active" ng-href="#/order-create">{{On To Shop}}<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
 </div>
 
 <div class="row marketing">
 <div ng-controller="ArtController as store">
 
-<h4>GALLERY NAVIGATION</h4>
+<h4>{{GALLERY NAVIGATION}}</h4>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#">Home</a></li>
     <li><a ng-href="/products">Art</a></li>

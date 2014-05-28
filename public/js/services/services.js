@@ -17,6 +17,11 @@ angular.module('ngArt')
 				show: { method: 'GET'},
 				edit: { method: 'PUT'},
 				delete: { method: 'DELETE'}
-			}
+			});
+	})
+
+
+
+
 			
 	});
